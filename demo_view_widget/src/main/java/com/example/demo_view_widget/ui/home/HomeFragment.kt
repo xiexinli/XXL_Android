@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.demo_view_widget.circle_view.CircleViewDialogFragment
 import com.example.demo_view_widget.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -15,7 +16,7 @@ class HomeFragment : Fragment() {
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
+    private val mVB get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,13 +27,21 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val root: View = mVB.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = mVB.textHome
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        initView()
         return root
+    }
+
+    private fun initView() {
+        mVB.ifb.setOnClickListener {
+            CircleViewDialogFragment().showThis(childFragmentManager, Bundle())
+        }
     }
 
     override fun onDestroyView() {

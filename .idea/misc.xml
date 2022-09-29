@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="demo_view_widget/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="demo_view_widget/src/main/res/layout/fragment_circle_view.xml" value="0.3515625" />
+        <entry key="demo_view_widget/src/main/res/layout/fragment_home.xml" value="0.3515625" />
+        <entry key="demo_view_widget/src/main/res/layout/layout_circle_view.xml" value="2.0" />
       </map>
     </option>
   </component>
