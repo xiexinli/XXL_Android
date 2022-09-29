@@ -21,3 +21,4 @@ include ':demo_chad'
 
 // Libraries
 include ':base_library'
+include ':demo_view_widget'
