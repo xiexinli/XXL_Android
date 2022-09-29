@@ -16,9 +16,9 @@ rootProject.name = "XXL_Android"
 //demos app
 include ':app'
 include ':demo_chad'
+include ':demo_view_widget'
 
 // Utils
 
 // Libraries
 include ':base_library'
-include ':demo_view_widget'
