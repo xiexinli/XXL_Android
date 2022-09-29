@@ -6,7 +6,7 @@
     android:background="@android:color/white">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_supper_pic"
+        android:id="@+id/siv"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
@@ -18,4 +18,16 @@
         app:shapeAppearance="@style/RoundedStyle"
         app:strokeColor="@android:color/holo_red_light"
         app:strokeWidth="1dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ifv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toEndOf="@id/siv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
