@@ -15,9 +15,9 @@ dependencyResolutionManagement {
 rootProject.name = "XXL_Android"
 //demos app
 include ':app'
+include ':demo_chad'
 
 // Utils
 
 // Libraries
 include ':base_library'
-include ':demo_chad'
