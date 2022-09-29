@@ -12,5 +12,12 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Architecture"
+rootProject.name = "XXL_Android"
+//demos app
 include ':app'
+
+// Utils
+
+// Libraries
+include ':base_library'
+include ':demo_chad'
