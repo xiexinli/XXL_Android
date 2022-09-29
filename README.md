@@ -8,5 +8,4 @@
 
 ## Personal Web
 
-[个人网页](https://github.com/xiexinli)go to study.
-
+「**[个人网页](https://github.com/xiexinli)**」go to study.
