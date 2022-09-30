@@ -22,6 +22,10 @@ class HttpClient private constructor() {
         fun getInstance(): HttpClient {
             return SingletonHolder.INSTANCE
         }
+
+        fun getService(): HttpService {
+            return SingletonHolder.INSTANCE.create(HttpService::class.java)
+        }
     }
 
     init {
@@ -47,9 +51,9 @@ class HttpClient private constructor() {
         return mRetrofit.create(service)
     }
 
-    fun getService(): HttpService {
-        return create(HttpService::class.java)
-    }
+//    fun getService(): HttpService {
+//        return create(HttpService::class.java)
+//    }
 
     private object SingletonHolder {
         val INSTANCE: HttpClient = HttpClient()
