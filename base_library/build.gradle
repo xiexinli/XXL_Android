@@ -50,6 +50,21 @@ dependencies {
     api 'androidx.navigation:navigation-fragment-ktx:2.5.2'
     api 'androidx.navigation:navigation-ui-ktx:2.5.2'
 
+    /*------retrofit2---------*/
+    def retrofit_version = "2.9.0"
+    api "com.squareup.retrofit2:adapter-rxjava3:$retrofit_version"
+    api "com.squareup.retrofit2:retrofit:$retrofit_version"
+    api "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    api "com.squareup.retrofit2:converter-scalars:$retrofit_version"
+
+    /*------okhttp3----------*/
+    def okhttpVersion = "4.10.0"
+    api(platform("com.squareup.okhttp3:okhttp-bom:$okhttpVersion"))
+    api("com.squareup.okhttp3:okhttp")
+    api("com.squareup.okhttp3:logging-interceptor")
+
+    api 'com.alibaba:fastjson:1.1.72.android'
+
     api 'com.google.android.material:material:1.6.1'
 
     /*------tools---------*/
