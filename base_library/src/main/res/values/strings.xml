@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="system_error_title">Network Error</string>
+    <string name="server_busy">The server is being busy, please try again</string>
+
+</resources>

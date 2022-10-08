@@ -1,8 +1,13 @@
 package com.example.base_library.net_1
 
+import com.example.base_library.data.ArticlesBean
 import retrofit2.http.*
 
 interface HttpService {
+
+    @Headers(URL_WWW)
+    @GET("article/list/0/json")
+    suspend fun getListArticle(@Field("page_size") keyword: String?): NetResultBean<ArticlesBean>
 
     @Headers(URL_WWW)
     @FormUrlEncoded
@@ -25,13 +30,4 @@ interface HttpService {
     @Headers(URL_APP)
     @GET("/checkout/cartSplit/buyAgainList.do")
     suspend fun getOne(@QueryMap params: Map<String, String?>): NetResultBean<Any>
-
-
 }
-
-data class NetResultBean<T>(
-    var message: String? = null, // 返回结果
-    var state: String? = null, // 返回码
-    var serverTime: Long = 0,
-    var data: T? = null
-)
