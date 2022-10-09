@@ -3,6 +3,8 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url 'https://mvn.mob.com/android' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
     }
 }
 dependencyResolutionManagement {
@@ -10,15 +12,21 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            allowInsecureProtocol = true // 信任该仓库
+            url 'https://maven.aliyun.com/repository/public/'
+        }
     }
 }
 rootProject.name = "XXL_Android"
-//demos app
-include ':app'
-include ':demo_chad'
-include ':demo_view_widget'
-
 // Utils
 
 // Libraries
 include ':base_library'
+
+//demos app
+include ':app'
+include ':demo_chad'
+include ':demo_view_widget'
+//include ':wanandroid'

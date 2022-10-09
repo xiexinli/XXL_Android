@@ -49,6 +49,8 @@ dependencies {
     api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     api 'androidx.navigation:navigation-fragment-ktx:2.5.2'
     api 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    api 'androidx.startup:startup-runtime:1.1.1'
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
     /*------retrofit2---------*/
     def retrofit_version = "2.9.0"
@@ -69,4 +71,17 @@ dependencies {
 
     /*------tools---------*/
     api 'com.blankj:utilcodex:1.31.0'
+
+//    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$brvah_version"
+
+//    //波纹控件
+//    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+////    api 'com.just.agentweb:agentweb:3.0.0'
+//    api "com.just.agentweb:agentweb:$agentweb_version"
+//    debugApi "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+//    releaseApi "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version"
+//    api "com.gyf.barlibrary:barlibrary:$barlibrary_version"
+//    api "com.hyman:flowlayout-lib:$flowlayout_version"
+//    api "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:$retrofit2_converter_kotlin_coroutines_version"
 }
