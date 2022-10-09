@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/base_library" />
             <option value="$PROJECT_DIR$/demo_chad" />
             <option value="$PROJECT_DIR$/demo_view_widget" />
+            <option value="$PROJECT_DIR$/design_pattern" />
           </set>
         </option>
       </GradleProjectSettings>
