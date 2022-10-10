@@ -1,6 +1,7 @@
 package com.example.design_pattern
 
-import com.example.design_pattern.pattern_create.fatory.fatoryMethod.FruitStoreTest
+import com.example.design_pattern.pattern_structure.bridge.BridgeClient
+import com.example.design_pattern.pattern_structure.decorator.DecoratorClient
 import org.junit.Test
 
 /**
@@ -15,7 +16,15 @@ class ExampleUnitTest {
         print("-------------------------------------------------------\n")
         print("-------------------------------------------------------\n\n")
 
-        FruitStoreTest.pack()
+        //创建型：create
+
+
+        //结构型：structure
+//        BridgeClient.main(null)//桥接模式
+        DecoratorClient.main(null)//10装饰器模式
+
+        //行为型：action
+
 
         print("\n\n-------------------------------------------------------\n")
         print("-------------------------------------------------------\n")
