@@ -18,8 +18,10 @@ class HomeViewModel : ViewModel() {
     val dataNetOne = MutableLiveData<String>()
     fun getNetData() {
         viewModelScope.launch {
-            val netResult = createCall {
-                HttpClient.getService().getListArticle(null)
+            createCall {
+                HttpClient.getService().getListArticle()
+            }.let {
+                dataNetOne.postValue(it.toString())
             }
         }
     }

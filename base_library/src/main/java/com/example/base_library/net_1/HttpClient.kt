@@ -21,9 +21,9 @@ class HttpClient private constructor() {
         /*超时时间-默认60秒*/
         private const val READ_TIME = 60L
 
-        private fun getInstance(): HttpClient {
-            return SingletonHolder.INSTANCE
-        }
+//        private fun getInstance(): HttpClient {
+//            return SingletonHolder.INSTANCE
+//        }
 
         fun getService(): HttpService {
             return SingletonHolder.INSTANCE.create(HttpService::class.java)
@@ -53,9 +53,9 @@ class HttpClient private constructor() {
         return mRetrofit.create(service)
     }
 
-    private fun getService(): HttpService {
-        return create(HttpService::class.java)
-    }
+//    private fun getService(): HttpService {
+//        return create(HttpService::class.java)
+//    }
 
     private object SingletonHolder {
         val INSTANCE: HttpClient = HttpClient()

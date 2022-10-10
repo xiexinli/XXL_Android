@@ -35,18 +35,18 @@ object NetExceptions {
             ex
         } else if (e is ConnectException || e is UnknownHostException) {//网络错误
             ex = SelfDefineHttpException(e, err_0x1111)
-            ex.setMessage(MyApplication.getInstance().getString(R.string.system_error_title))
+//            ex.setMessage(MyApplication.getInstance().getString(R.string.system_error_title))
             ex
         } else if (e is SocketTimeoutException) {
             ex = SelfDefineHttpException(e, err_0x1111)
-            ex.setMessage(MyApplication.getInstance().getString(R.string.server_busy))
+//            ex.setMessage(MyApplication.getInstance().getString(R.string.server_busy))
             ex
 //        } else if (e is AkamaiChallengeException) { //Akamai challenge异常
 //            ex = SelfDefineHttpException(e, ErrorCode.err_0x428)
 //            ex
         } else {
             ex = SelfDefineHttpException(e, err_0x0106)
-            ex.setMessage(MyApplication.getInstance().getString(R.string.system_error_title)) //未知错误
+//            ex.setMessage(MyApplication.getInstance().getString(R.string.system_error_title)) //未知错误
             ex
         }
     }

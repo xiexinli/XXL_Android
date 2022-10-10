@@ -7,7 +7,7 @@ interface HttpService {
 
     @Headers(URL_WWW)
     @GET("article/list/0/json")
-    suspend fun getListArticle(@Field("page_size") keyword: String?): NetResultBean<ArticlesBean>
+    suspend fun getListArticle(): NetResultBean<ArticlesBean>
 
     @Headers(URL_WWW)
     @FormUrlEncoded
