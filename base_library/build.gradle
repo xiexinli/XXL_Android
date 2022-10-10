@@ -72,12 +72,11 @@ dependencies {
     /*------tools---------*/
     api 'com.blankj:utilcodex:1.31.0'
 
-//    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$brvah_version"
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$brvah_version"
 
-//    //波纹控件
 //    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-////    api 'com.just.agentweb:agentweb:3.0.0'
+//    api 'com.just.agentweb:agentweb:3.0.0'
 //    api "com.just.agentweb:agentweb:$agentweb_version"
 //    debugApi "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
 //    releaseApi "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version"

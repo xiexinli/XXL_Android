@@ -31,7 +31,9 @@ class HomeFragment : Fragment() {
             textView.text = it
         }
 
-        mVM.getNetData()
+//        mVM.getNetData()
+
+        mVM.getNetDataByNet2()
 
         initDataObserver()
         return root
