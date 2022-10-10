@@ -1,8 +1,7 @@
 package com.example.design_pattern
 
+import com.example.design_pattern.pattern_create.fatory.fatoryMethod.FruitStoreTest
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -12,6 +11,14 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        print("-------------------------------------------------------\n")
+        print("-------------------------------------------------------\n")
+        print("-------------------------------------------------------\n\n")
+
+        FruitStoreTest.pack()
+
+        print("\n\n-------------------------------------------------------\n")
+        print("-------------------------------------------------------\n")
+        print("-------------------------------------------------------\n")
     }
 }

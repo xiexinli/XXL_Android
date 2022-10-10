@@ -2,6 +2,7 @@ package com.example.design_pattern
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.design_pattern.pattern_create.fatory.fatoryMethod.FruitStoreTest
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -20,5 +21,6 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.design_pattern", appContext.packageName)
+        FruitStoreTest.pack()
     }
 }
