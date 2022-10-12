@@ -7,10 +7,13 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.architecture.MainViewModel
 import com.example.architecture.databinding.FragmentHomeBinding
+import com.example.base_library.logeXXL1
 
 class HomeFragment : Fragment() {
     private val mVM by viewModels<HomeViewModel>()
+    private val mVMActivity by viewModels<MainViewModel>({ requireActivity() })
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -34,6 +37,10 @@ class HomeFragment : Fragment() {
 //        mVM.getNetData()
 
         mVM.getNetDataByNet2()
+
+        mVMActivity.dataMainTest1.observe(requireActivity()) {
+            logeXXL1(this, it)
+        }
 
         initDataObserver()
         return root

@@ -6,11 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import com.example.architecture.MainViewModel
 import com.example.architecture.databinding.FragmentGalleryBinding
+import com.example.base_library.logeXXL1
 
 class GalleryFragment : Fragment() {
 
+    private val mVMActivity by viewModels<MainViewModel>({ requireActivity() })
     private var _binding: FragmentGalleryBinding? = null
 
     // This property is only valid between onCreateView and
@@ -31,6 +35,10 @@ class GalleryFragment : Fragment() {
         val textView: TextView = binding.textGallery
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+        }
+
+        mVMActivity.dataMainTest1.observe(requireActivity()) {
+            logeXXL1(this, it)
         }
         return root
     }
