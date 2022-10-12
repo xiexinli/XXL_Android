@@ -1,6 +1,9 @@
 package com.example.base_library;
 
-public class UnitTestJava {
+import org.junit.Test;
+
+public class TestXXL {
+    @Test
     public void test1() {
         char lastChar = KotlinFunctionKt.lastChar("");
     }
