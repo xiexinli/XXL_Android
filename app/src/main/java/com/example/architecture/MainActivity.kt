@@ -12,6 +12,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.architecture.databinding.ActivityMainBinding
+import com.example.base_library.logeXXL1
+import com.example.base_library.logeXXL2
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         binding.appBarMain.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
+            logeXXL1(this, "xiexinli1")
+            logeXXL2(this, "xiexinli2")
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
@@ -40,6 +45,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
             ), drawerLayout
         )
+        appBarConfiguration.let {
+
+        }
+        appBarConfiguration.apply {
+
+        }
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

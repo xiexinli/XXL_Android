@@ -64,12 +64,12 @@ abstract class BaseFullDialogFragment<VB : ViewBinding> : DialogFragment() {
             setCancelable(true)
             setCanceledOnTouchOutside(true)
             window?.run {
-                setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+                setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 setGravity(Gravity.BOTTOM)
-                mVB.root.layoutParams?.apply {
-                    height = ScreenUtils.getScreenHeight() * 3 / 4
+//                mVB.root.layoutParams?.apply {
+//                    height = ScreenUtils.getScreenHeight() * 3 / 4
 //                    height = ScreenUtils.getScreenHeight()
-                }
+//                }
             }
         }
     }
