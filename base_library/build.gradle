@@ -33,6 +33,7 @@ android {
         //启动视图绑定
         viewBinding true
     }
+    namespace 'com.example.base_library'
 }
 
 dependencies {
