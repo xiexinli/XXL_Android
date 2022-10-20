@@ -36,4 +36,9 @@
         app:layout_constraintStart_toEndOf="@id/ifb"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.example.demo_view_widget.widget.LikeView
+        android:id="@+id/like_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

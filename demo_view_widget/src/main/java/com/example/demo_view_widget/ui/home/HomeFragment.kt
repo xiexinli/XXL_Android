@@ -42,10 +42,24 @@ class HomeFragment : Fragment() {
         mVB.ifb.setOnClickListener {
             CircleViewDialogFragment().showThis(childFragmentManager, Bundle())
         }
+        mVB.likeView.onClickListener = object : MyClickListener {
+            override fun oneClick() {
+
+            }
+
+            override fun doubleClick() {
+
+            }
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+}
+
+interface MyClickListener {
+    fun oneClick()
+    fun doubleClick()
 }
