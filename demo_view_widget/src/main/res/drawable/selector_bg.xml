@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--被选中时是4dp的底部边线-->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#f00" />
+                </shape>
+            </item>
+            <item android:bottom="4dp">
+                <shape>
+                    <solid android:color="#fff" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!--未被选中的是2dp的底部边线-->
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#f00" />
+                </shape>
+            </item>
+            <item android:bottom="2dp">
+                <shape>
+                    <solid android:color="#fff" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--&lt;!&ndash;被选中时是4dp的底部边线&ndash;&gt;-->
+    <!--<item android:state_checked="true">-->
+    <!--    <layer-list>-->
+    <!--        <item>-->
+    <!--            <color android:color="#f00"/>-->
+    <!--        </item>-->
+    <!--        <item android:bottom="5dp">-->
+    <!--            <color android:color="#fff"/>-->
+    <!--        </item>-->
+    <!--    </layer-list>-->
+    <!--</item>-->
+
+    <!--&lt;!&ndash;未被选中的是2dp的底部边线&ndash;&gt;-->
+    <!--<item>-->
+    <!--    <layer-list>-->
+    <!--        <item>-->
+    <!--            <color android:color="#f00"/>-->
+    <!--        </item>-->
+    <!--        <item android:bottom="2dp">-->
+    <!--            <color android:color="#fff"/>-->
+    <!--        </item>-->
+    <!--    </layer-list>-->
+    <!--</item>-->
+    <!--</selector>-->
