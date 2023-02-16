@@ -17,10 +17,20 @@ class ExampleUnitTest {
 //        printTime()
 //        tes()
 
-        logeXXL1(this,"xiexinli1")
-        logeXXL2(this,"xiexinli2")
+        test1
+        test2()
+
+        logeXXL1(this, "xiexinli1")
+//        logeXXL2(this, "xiexinli2")
 
         println("---------------------------------------")
         println("---------------------------------------")
+    }
+
+    private val test1 = {
+        println("11111111111111")
+    }
+    val test2 = {
+        println("22222222222")
     }
 }

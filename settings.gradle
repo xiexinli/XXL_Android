@@ -17,6 +17,12 @@ dependencyResolutionManagement {
             allowInsecureProtocol = true // 信任该仓库
             url 'https://maven.aliyun.com/repository/public/'
         }
+//        maven {
+//            url '/Users/alion/AndroidStudioProjects/XXL_Android/flutter_module/build/host/outputs/repo'
+//        }
+//        maven {
+//            url "$storageUrl/download.flutter.io"
+//        }
     }
 }
 rootProject.name = "XXL_Android"
