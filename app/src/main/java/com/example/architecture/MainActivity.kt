@@ -40,8 +40,9 @@ class MainActivity : AppCompatActivity() {
 
             mVMActivity.dataMainTest1.value = System.currentTimeMillis().toString()
 
-            val intent = IntentUtils.getLaunchAppIntent("com.dhgate.buyermob")
-            startActivity(intent)
+//            packageManager.getLaunchIntentForPackage("com.dhgate.buyermob")?.let {
+//                startActivity(it)
+//            }
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
