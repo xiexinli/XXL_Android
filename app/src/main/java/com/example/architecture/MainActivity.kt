@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.blankj.utilcode.util.IntentUtils
 import com.example.architecture.databinding.ActivityMainBinding
 import com.example.base_library.logeXXL1
 import com.example.base_library.logeXXL2
@@ -37,7 +38,10 @@ class MainActivity : AppCompatActivity() {
 //            logeXXL1(this, "xiexinli1")
 //            logeXXL2(this, "xiexinli2")
 
-            mVMActivity.dataMainTest1.value=System.currentTimeMillis().toString()
+            mVMActivity.dataMainTest1.value = System.currentTimeMillis().toString()
+
+            val intent = IntentUtils.getLaunchAppIntent("com.dhgate.buyermob")
+            startActivity(intent)
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView

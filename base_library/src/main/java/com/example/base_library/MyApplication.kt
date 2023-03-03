@@ -1,6 +1,7 @@
 package com.example.base_library
 
 import android.app.Application
+import com.alibaba.android.arouter.launcher.ARouter
 
 class MyApplication : Application() {
 //    companion object {
@@ -13,5 +14,12 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 //        instance = this
+        initARouter()
+    }
+
+    private fun initARouter() {
+        ARouter.init(this)
+        ARouter.openLog()
+        ARouter.openDebug()
     }
 }
