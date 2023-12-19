@@ -1,10 +1,15 @@
-package com.example.base_library;
+package com.example.base_library
 
-import org.junit.Test;
+import org.junit.Test
 
-public class TestXXL {
+class TestXXL {
     @Test
-    public void test1() {
-        char lastChar = KotlinFunctionKt.lastChar("");
+    fun test1() {
+        val lastChar = "".lastChar()
+    }
+
+    @Test
+    fun test2() {
+        val lastChar = "".lastChar()
     }
 }
